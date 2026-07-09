@@ -7,13 +7,12 @@ This repository is a Codex plugin marketplace for the `translate-manga` skill.
 Add this repository as a plugin marketplace:
 
 - Source: `fenghengzhi/manga-translate-skill` or `https://github.com/fenghengzhi/manga-translate-skill.git`
-- Git ref: `main`
 - Sparse path: leave empty
 
 Then install the plugin:
 
 ```bash
-codex plugin marketplace add fenghengzhi/manga-translate-skill --ref main
+codex plugin marketplace add fenghengzhi/manga-translate-skill
 codex plugin add translate-manga@translate-manga
 ```
 
