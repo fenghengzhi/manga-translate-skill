@@ -36,6 +36,22 @@ The skill defines a manga translation workflow for `image_gen.imagegen`:
 - Save outputs as deterministic files such as `002.zh.png`.
 - Validate generated files with `skills/translate-manga/scripts/validate_outputs.py`.
 
+## Translation Example
+
+| Original | Translated |
+| --- | --- |
+| <img src="examples/005.original.jpg" width="360" alt="Original manga page 005"> | <img src="examples/005.translated.png" width="360" alt="Translated manga page 005"> |
+
+## Usage Examples
+
+```text
+$translate-manga translate all images in ./chapter-01 and save each output as <basename>.zh.png.
+$translate-manga translate pages 001-022 in ./chapter-01.
+$translate-manga re-translate ./chapter-01/005.jpg and overwrite ./chapter-01/005.zh.png.
+$translate-manga translate all hash-named images in ./chapter-01 while keeping each original basename.
+$translate-manga validate translated outputs in ./chapter-01.
+```
+
 ## Notes
 
 This skill is designed specifically for Codex. It relies on Codex-provided image generation and subagent isolation, especially the ability to pass each source page as a `local_image` and call `image_gen.imagegen` from a fresh context.
