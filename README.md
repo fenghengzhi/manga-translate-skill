@@ -1,10 +1,8 @@
 # Translate Manga Codex Plugin
 
-This repository is a repo-local Codex plugin marketplace for the `translate-manga` skill.
+This repository is a Codex plugin marketplace for the `translate-manga` skill.
 
 ## Install
-
-### Codex App
 
 Add this repository as a plugin marketplace:
 
@@ -12,14 +10,10 @@ Add this repository as a plugin marketplace:
 - Git ref: `main`
 - Sparse path: leave empty
 
-Then install the `translate-manga` plugin from that marketplace and start a new Codex thread so the skill is loaded.
-
-### Local Clone
-
-You can also clone this repository and add the local repository root as a Codex plugin marketplace:
+Then install the plugin:
 
 ```bash
-codex plugin marketplace add /path/to/translate-manga
+codex plugin marketplace add fenghengzhi/manga-translate-skill --ref main
 codex plugin add translate-manga@translate-manga
 ```
 
