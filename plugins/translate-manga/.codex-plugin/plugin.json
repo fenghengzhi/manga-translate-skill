@@ -1,0 +1,23 @@
+{
+  "name": "translate-manga",
+  "version": "0.1.0",
+  "description": "Distribute the translate-manga Codex skill for isolated manga page translation with image_gen.",
+  "author": {
+    "name": "Local developer"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Translate Manga",
+    "shortDescription": "Translate manga pages with isolated image context.",
+    "longDescription": "Translate Manga provides a Codex skill for Chinese manga localization with one isolated subagent and one local image reference per image_gen call, plus deterministic output validation.",
+    "developerName": "Local developer",
+    "category": "Productivity",
+    "capabilities": [
+      "Write",
+      "Interactive"
+    ],
+    "defaultPrompt": [
+      "Use $translate-manga to translate these manga pages into Simplified Chinese."
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Translate Manga"
+  short_description: "Translate manga pages with isolated image context"
+  default_prompt: "Use $translate-manga to translate local manga page images into Simplified Chinese while preserving panels and artwork."

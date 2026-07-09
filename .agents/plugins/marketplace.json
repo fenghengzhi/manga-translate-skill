@@ -1,0 +1,20 @@
+{
+  "name": "translate-manga",
+  "interface": {
+    "displayName": "Translate Manga"
+  },
+  "plugins": [
+    {
+      "name": "translate-manga",
+      "source": {
+        "source": "local",
+        "path": "./plugins/translate-manga"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
