@@ -31,6 +31,12 @@ The skill defines a manga translation workflow for `image_gen.imagegen`:
 - Save outputs as deterministic files such as `002.zh.png`.
 - Validate generated files with `skills/translate-manga/scripts/validate_outputs.py`.
 
+## Notes
+
+This skill is designed specifically for Codex. It relies on Codex-provided image generation and subagent isolation, especially the ability to pass each source page as a `local_image` and call `image_gen.imagegen` from a fresh context.
+
+Translated images may come back with slight expansion, trimming, or dimension drift compared with the original page. The workflow can detect and optionally resample dimensions, but it does not currently have a reliable way to prevent these image-generation changes at the source.
+
 ## Local Validation
 
 ```bash
